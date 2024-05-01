@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  text-align: center;
+
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 4px;
+}
+
+.container div {
+  padding: 15px;
+  font-size: 32px;
+  font-family: Helvetica;
+  font-weight: bold;
+  color: white;
+}
+
+.header {
+  background-color: #393f4d;
+  
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr;
+  grid-area: 1 / 1 / 2 / 3;
+
+}
+
+.header .logo {
+  text-align: left;
+}
+
+.header .menu {
+  display: grid;
+  align-content: center;
+}
+
+.menu ul,
+.menu li {
+  font-size: 16px;
+  list-style:none;
+
+}
+
+.menu ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+
+.sidebar {
+  background-color: #C50208;
+
+  display: grid;
+  gap: 50px;
+  grid-area: 2 / 1 / 4 / 2;
+}
+
+.sidebar .photo {
+  background-color: white;
+  color: black;
+  font-size: 12px;
+  font-weight: normal;
+  border-radius: 10px;
+
+  display: grid;
+  align-content: center;
+}
+
+
+.sidebar .side-content {
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  font-weight: normal;
+
+  display: grid;
+  align-content: center;
+
+  
+}
+
+.nav {
+  background-color: #C50208;
+
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.nav ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.nav ul li {
+  font-size: 16px;
+  text-transform: uppercase;
+  list-style: none;
+
+}
+
+.article {
+  background-color: #bccbde;
+
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-area: 3 / 2 / 4 / 3;
+}
+
+.article p {
+  font-size: 18px;
+  font-family: sans-serif;
+  color: white;
+  text-align: left;
+}
+
+.article .card {
+  background-color: #FFFFFF;
+  color: black;
+  text-align: center;
+
+  height: 200px;
+}
+
+.card p {
+  color: black;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.card .title {
+  font-size: 18px;
+  text-align: center;
+}
+
+.footer {
+  background-color: #393f4d;
+
+  grid-area: 4 / 1 / 5 / 3;
+}
+
+.footer p {
+  font-size: 13px;
+  font-weight: normal;
+}
